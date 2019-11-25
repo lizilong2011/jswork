@@ -3,6 +3,7 @@ let year = new Date().getFullYear()
 document.getElementById("cal").innerHTML = calendar(year)
 
 function setCalendar(year) {
+    
     document.getElementById('cal').innerHTML = '<div class="box" id="cal"></div>';
     var year = parseInt(year)
     var pre = year-1
