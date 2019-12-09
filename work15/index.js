@@ -14,7 +14,7 @@ ShopCart('cart', [{
     num: 3
 },
 {
-    name: 'web前端开发高颎(下册)',
+    name: 'web前端开发高级(下册)',
     price: 49.0,
     num: 3
 },
