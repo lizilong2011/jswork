@@ -21,7 +21,7 @@ function animate(obj, option){
 document.getElementById('box').innerHTML = "点我啊";
 function getStyle(obj, attr){
     if(window.getComputedStyle){
-        return window.getComputedStyle(obj, null)[attr];
+      return window.getComputedStyle(obj, null)[attr];
     }else{
         return obj.currentStyle[attr];
     }
