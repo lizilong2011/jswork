@@ -3,7 +3,6 @@ var inputs = document.getElementsByTagName('input');
 for (var i = 0; i < inputs.length - 1; ++i) {
     inputs[i].onblur = inputBlur;
 }
-
 function inputBlur() {
     var name = this.name
     var val = this.value
