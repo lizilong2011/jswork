@@ -5,6 +5,7 @@ $(function () {
     var width = 1420;
     var speed = 400;
     var firstimg = $('.hot li').first().clone();
+
     $('.hot').append(firstimg).width($('.hot li').length * width);
     timer = setInterval(imgChange, delay);
     $('.banner').hover(function () {
@@ -12,6 +13,7 @@ $(function () {
     }, function () {
         timer = setInterval(imgChange, delay);
     });
+
     $('.dot li').mouseover(function () {
         i = $(this).index();
         $('.hot').stop().animate({
@@ -19,14 +21,17 @@ $(function () {
         }, 200);
         dotChange();
     });
+
     $('.banner').hover(function () {
         $('.arrow').show();
     }, function () {
         $('.arrow').hide();
     });
+
     $('.next').click(function () {
         imgChange()
     });
+
     $('.prev').click(function () {
         --i;
         if (i == -1) {
@@ -35,11 +40,13 @@ $(function () {
                 left: -($('.hot li').length - 1) * width
             });
         }
+
         $('.hot').stop().animate({
             left: -i * width
         }, speed);
         dotChange();
     });
+
     function imgChange() {
         ++i;
         isCrack();
@@ -52,10 +59,12 @@ $(function () {
                 left: 0
             });
         }
+
         $('.hot').stop().animate({
             left: -i * width
         }, speed);
     }
+    
    function dotChange() {
        if (i == $('.hot li').length - 1){
            $('.dot li').eq(0).addClass('on').siblings().removeClass('on');
