@@ -64,7 +64,7 @@ $(function () {
             left: -i * width
         }, speed);
     }
-    
+
    function dotChange() {
        if (i == $('.hot li').length - 1){
            $('.dot li').eq(0).addClass('on').siblings().removeClass('on');
